@@ -1,10 +1,10 @@
-bcwav: a simple python script to set tags for wav tracks downloaded from [bandcamp](bandcamp.com) that makes extensive use of the [music-tag library](https://pypi.org/project/music-tag/)
+bcwav: a simple python script to set tags for wav tracks downloaded from [bandcamp](https://bandcamp.com) that makes extensive use of the [music-tag library](https://pypi.org/project/music-tag/)
 
 Works for wav files downloaded from bandcamp that follow the nomenclature:
 
 `<ARTIST> - <ALBUM> - <TRACK NUMBER> <TITLE>.wav` 
 
-Given a directory this script will:
+Given a directory, this script will:
 
 1. Map the aforementioned fields from the title to the track tags
 2. Rename the file with the track title
@@ -50,4 +50,8 @@ The album is now correctly tagged and named, ameliorating track order headaches.
 ## TODO:
 
 - Bash-ization of execution
+- (constant) refactor code to better understanding
+  - Terminal output
+  - inline comments
+- directory mode vs per album mode
 - album artwork
