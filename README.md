@@ -1,6 +1,64 @@
 bcwav: a simple python script to set tags for wav tracks downloaded from [bandcamp](https://bandcamp.com) that makes extensive use of the [music-tag library](https://pypi.org/project/music-tag/)
 
-Works for wav files downloaded from bandcamp that follow the nomenclature:
+## Installation
+
+To use `bcwav`, you'll need Python 3 installed on your system. You can check if Python is installed by running `python3 --version` in your terminal. If you don't have Python 3, you can download it from the [official Python website](https://www.python.org/downloads/).
+
+Next, follow these steps to set up `bcwav`:
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/your-username/bcwav.git
+   ```
+
+   Replace `your-username` with your GitHub username or use the repository URL provided in the README if it's already configured on GitHub.
+
+2. Navigate to the `bcwav` directory:
+
+   ```bash
+   cd bcwav
+   ```
+
+3. Install the required Python packages using `pip`:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+   This will install the necessary packages, including `music-tag`.
+
+4.  You can create an alias for `bcwav` in a single Bash command using the `alias` command. Here's the one-liner to create the alias:
+
+   ```bash
+   echo "alias bcwav='python3 /path/to/bcwav.py'" >> ~/.bashrc && source ~/.bashrc
+   ```
+
+   Replace `/path/to/bcwav.py` with the actual path to your `bcwav.py` script.
+
+## Usage
+
+Once you've installed `bcwav`, you can use it to organize and tag your Bandcamp WAV files as described in the README.
+
+Here's how to use `bcwav`:
+
+1. Open your terminal.
+
+2. Navigate to the directory where your Bandcamp WAV files are located. For example:
+
+   ```bash
+   cd /path/to/your/wav/files/
+   ```
+
+3.  You can create an alias for `bcwav` in a single Bash command using the `alias` command. Here's the one-liner to create the alias:
+
+   Replace `/path/to/bcwav.py` with the actual path to your `bcwav.py` script.
+
+4. `bcwav` will process the files in the specified directory, set tags, and rename the files according to the track titles. You should see terminal output indicating the progress.
+
+5. After the script has finished, your WAV files will be correctly tagged and renamed in the same directory.
+
+Works for wav files downloaded from Bandcamp that follow the nomenclature:
 
 `<ARTIST> - <ALBUM> - <TRACK NUMBER> <TITLE>.wav` 
 
@@ -26,7 +84,7 @@ Example:
 ├── Tipper\ -\ Jettison\ Mind\ Hatch\ -\ 11\ Shelled.wav
 └── Tipper\ -\ Jettison\ Mind\ Hatch\ -\ 12\ Oi\ Oi\ Spit.wav
 
-➜ python3 ../bcwav/bcwav.py /Full/filepath/to/album/
+➜ bcwav /Full/filepath/to/album/
 
 ➜  tree .
 ├── Baleen.wav
@@ -47,11 +105,3 @@ The album is now correctly tagged and named, ameliorating track order headaches.
 
 ![JMH in VLC](https://i.imgur.com/BCn5F9O.png)
 
-## TODO:
-
-- Bash-ization of execution
-- (constant) refactor code to better understanding
-  - Terminal output
-  - inline comments
-- directory mode vs per album mode
-- album artwork
