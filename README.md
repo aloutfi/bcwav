@@ -9,7 +9,7 @@ Next, follow these steps to set up `bcwav`:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/bcwav.git
+   git clone https://github.com/aloutfi/bcwav.git
    ```
 
    Replace `your-username` with your GitHub username or use the repository URL provided in the README if it's already configured on GitHub.
