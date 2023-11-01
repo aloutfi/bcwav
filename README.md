@@ -1,6 +1,5 @@
-bcwav: a simple python script to set tags for wav tracks downloaded from [bandcamp](https://bandcamp.com) that makes extensive use of the [music-tag library](https://pypi.org/project/music-tag/)
 
-## Installation
+# Installation
 
 To use `bcwav`, you'll need Python 3 installed on your system. You can check if Python is installed by running `python3 --version` in your terminal. If you don't have Python 3, you can download it from the [official Python website](https://www.python.org/downloads/).
 
@@ -36,7 +35,7 @@ Next, follow these steps to set up `bcwav`:
 
    Replace `/path/to/bcwav.py` with the actual path to your `bcwav.py` script.
 
-## Usage
+# Usage
 
 Once you've installed `bcwav`, you can use it to organize and tag your Bandcamp WAV files as described in the README.
 
